@@ -53,8 +53,6 @@ radio.onReceivedNumber(function (receivedNumber: number) {
         basic.clearScreen()
         basic.showArrow(ArrowNames.North)
         robotbit.StpCarMove(30, 26)
-        basic.clearScreen()
-        basic.showIcon(IconNames.Happy)
     }
 
     // Turn left if 2.
@@ -62,8 +60,6 @@ radio.onReceivedNumber(function (receivedNumber: number) {
         basic.clearScreen()
         basic.showArrow(ArrowNames.East)
         robotbit.StpCarTurn(-45, 26, 300)
-        basic.clearScreen()
-        basic.showIcon(IconNames.Happy)
     }
 
     // Turn right if 3.
@@ -71,8 +67,6 @@ radio.onReceivedNumber(function (receivedNumber: number) {
         basic.clearScreen()
         basic.showArrow(ArrowNames.West)
         robotbit.StpCarTurn(45, 26, 300)
-        basic.clearScreen()
-        basic.showIcon(IconNames.Happy)
     }
 
     // Go backward if 4.
@@ -80,7 +74,9 @@ radio.onReceivedNumber(function (receivedNumber: number) {
         basic.clearScreen()
         basic.showArrow(ArrowNames.South)
         robotbit.StpCarMove(-30, 26)
-        basic.clearScreen()
-        basic.showIcon(IconNames.Happy)
     }
+
+    // Happy face when done
+    basic.clearScreen()
+    basic.showIcon(IconNames.Happy)
 })
