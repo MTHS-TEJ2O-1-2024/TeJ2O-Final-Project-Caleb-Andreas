@@ -46,7 +46,7 @@ input.onGesture(Gesture.Shake, function () {
     basic.showIcon(IconNames.Happy)
 })
 
-// Rotate stepper motors based off signal
+// Rotate stepper motors based off signal received.
 radio.onReceivedNumber(function (receivedNumber: number) {
     // Go forward if 1.
     if (receivedNumber == 1) {
@@ -76,7 +76,7 @@ radio.onReceivedNumber(function (receivedNumber: number) {
         robotbit.StpCarMove(-30, 26)
     }
 
-    // Happy face when done
+    // Happy face when done.
     basic.clearScreen()
     basic.showIcon(IconNames.Happy)
 })
